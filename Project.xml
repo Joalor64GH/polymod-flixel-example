@@ -15,8 +15,8 @@
 	<window width="800" height="600" fps="60" background="#000000" hardware="true" vsync="false" />
 
 	<window if="html5" resizable="false" />
-	<windowif="desktop" orientation="landscape" fullscreen="false" resizable="true" />
-	<windowif="mobile" orientation="landscape" fullscreen="true" width="0" height="0" />
+	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" />
+	<window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0" />
 
 	<!--Path Settings-->
 	<set name="BUILD_DIR" value="export/debug" if="debug" />
