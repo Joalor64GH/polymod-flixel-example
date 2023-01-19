@@ -19,9 +19,16 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib setup C:/haxelib
-          haxelib install hxcpp > /dev/null --quiet
-          haxelib install hmm --quiet
-          haxelib run hmm install
+          haxelib install hxcpp > nul
+          haxelib install lime
+          haxelib install openfl
+          haxelib --never install flixel
+          haxelib run lime setup flixel
+          haxelib run lime setup
+          haxelib install flixel-ui
+          haxelib install flixel-addons
+          haxelib install polymod
+          haxelib install thx.semver
         shell: cmd
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION

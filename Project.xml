@@ -2,7 +2,7 @@
 <project xmlns="http://lime.openfl.org/project/1.0.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://lime.openfl.org/project/1.0.4 http://lime.openfl.org/xsd/project-1.0.4.xsd">
 
-    <!--Application Settings-->
+    	<!--Application Settings-->
 	<app title="Polymod Flixel Example" file="polymod" main="Main" version="0.1.0" company="Joalor64GH" />
 
 	<app preloader="flixel.system.FlxPreloader" />
