@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project xmlns="http://lime.openfl.org/project/1.0.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://lime.openfl.org/project/1.0.4 http://lime.openfl.org/xsd/project-1.0.4.xsd">
+
+    <!--Application Settings-->
+	<app title="Polymod Flixel Example" file="polymod" main="Main" version="0.1.0" company="Joalor64GH" />
+
+	<app preloader="flixel.system.FlxPreloader" />
+
+	<set name="SWF_VERSION" value="11.8" />
+
+	<!--Windows Settings-->
+
+	<!-- This applies to all targets-->
+	<window width="800" height="600" fps="60" background="#000000" hardware="true" vsync="false" />
+
+	<window if="html5" resizable="false" />
+	<windowif="desktop" orientation="landscape" fullscreen="false" resizable="true" />
+	<windowif="mobile" orientation="landscape" fullscreen="true" width="0" height="0" />
+
+	<!--Path Settings-->
+	<set name="BUILD_DIR" value="export/debug" if="debug" />
+	<set name="BUILD_DIR" value="export/release" unless="debug" />
+	
+	<source path="source" />
+	<assets path="assets" />
+
+	<!--Libraries-->
+	<haxelib name="flixel" />
+	<haxelib name="flixel-ui" />
+	<haxelib name="flixel-addons" />
+	<haxelib name="thx.semver" />
+	<haxelib name="polymod" />
+
+	<!--Haxedefines-->
+	<haxedef name="hscriptPos" />
+	<haxedef name="HXCPP_CHECK_POINTER" />
+	<haxedef name="HXCPP_STACK_LINE" />
+	<haxedef name="FLX_NO_DEBUG" unless="debug" />
+	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
+	<haxedef name="POLYMOD_DEBUG" value="true" />
+</project>
